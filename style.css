@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 ;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Rizzy Text Section */
+.rizzy-text-section {
+    margin: auto 0;
+}
+
+/* Rizzy Text Half-Hiding Animation */
+@keyframes half-hiding {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#rizzy-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: half-hiding 3s ease-in-out;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Product Link Section */
+.product-link-section {
+    margin-top: auto;
+    margin-bottom: 0;
+    border-radius: 12px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #ccc;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 0.8rem;
+    background-color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #rizzy-text {
+        font-size: 1.5rem;
+    }
+
+    button, .cta {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
