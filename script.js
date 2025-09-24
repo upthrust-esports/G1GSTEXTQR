@@ -19,7 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "The only heaven I’ll be sent to is when I’m alone with you.",
         "Is it hot in here, or is it just you?",
         "If looks could kill, you’d definitely be a heartbreaker.",
-        "I must be a snowflake because I’ve fallen for you."
+        "I must be a snowflake because I’ve fallen for you.",
+        "I know you want to see what's underneath.",
+        "This shirt's the only thing standing between you and a good time.",
+        "Don't just stare. Ask me what it feels like.",
+        "My clothes are a great conversation starter. The fun part is taking them off.",
+        "This shirt has a lot of secrets. And so do I.",
+        "This shirt's a lot like me: you'll want to see more of it.",
+        "I'm the main event. My clothes are just the teaser.",
+        "Looks like you're interested. My DMs are open.",
+        "My clothes aren't the only thing with a good fit.",
+        "I dress to impress. I hope it's working."
     ];
 
     const fetchRizzyText = () => {
